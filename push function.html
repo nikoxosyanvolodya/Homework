@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pushArr(array, item){
+    if(typeof(array) === "object"){
+        array.push(item);
+        console.log(array);
+    }else console.log("The first parameter is not an Array"); 
+}
+
+
+pushArr([0,1], 1);
+pushArr([], 4);
+pushArr(0, 1);
+pushArr(["21", "1211", 1], 22222);
+    </script>
+</body>
+</html>
